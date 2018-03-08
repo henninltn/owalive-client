@@ -9,6 +9,9 @@ module.exports = {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "Nuxt.js project" }
     ],
+    script: [
+      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB8ih1h1Lsrq7F-ou9sv4dcnxLiiVHCNl0' }
+    ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
@@ -19,6 +22,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['axios'],
     /*
     ** Run ESLint on save
     */
@@ -38,14 +42,7 @@ module.exports = {
   */
   mode: "spa",
   /*
-  ** Global CSS
-  */
-  css: [
-    "element-ui/lib/theme-chalk/reset.css",
-    "element-ui/lib/theme-chalk/index.css"
-  ],
-  /*
   ** Add element-ui in our app, see plugins/element-ui.js file
   */
-  plugins: ["@/plugins/element-ui"]
+  plugins: ['~plugins/buefy']
 };

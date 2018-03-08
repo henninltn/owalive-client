@@ -2,9 +2,7 @@
   <div class="container is-widescreen">
     <app-header/>
     <main>
-      <search/>
-      <ranking/>
-      <announcement/>
+      <sign-in/>
     </main>
     <app-footer/>
   </div>
@@ -12,17 +10,13 @@
 
 <script>
 import AppHeader from "~/components/AppHeader.vue";
-import Search from "~/components/Search.vue";
-import Ranking from "~/components/Ranking.vue";
-import Announcement from "~/components/Announcement.vue";
+import SignIn from "~/components/SignIn.vue";
 import AppFooter from "~/components/AppFooter.vue";
 
 export default {
   components: {
     AppHeader,
-    Search,
-    Ranking,
-    Announcement,
+    SignIn,
     AppFooter
   }
 };
