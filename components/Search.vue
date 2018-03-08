@@ -21,9 +21,9 @@
   background-image: url("~/static/header.jpg");
 }
 .searching-bar {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 .searching-button {
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 </style>

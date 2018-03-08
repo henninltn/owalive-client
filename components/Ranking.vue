@@ -117,7 +117,7 @@
   margin-bottom: 5rem;
 }
 .title {
-  margin: 1rem;
+  margin: 3rem;
 }
 .profile-1 {
   text-align: center;

@@ -47,7 +47,7 @@
   margin: 1rem 1rem 1rem 8rem;
 }
 .title {
-  margin: 1rem;
+  margin: 3rem;
 }
 .subtitle {
   text-align: center;
