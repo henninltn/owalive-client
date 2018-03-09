@@ -2,7 +2,7 @@
   <header class="header">
     <div class="columns">
       <div class="column is-6">
-        <h1>Icon</h1>
+        <h1><img src="~/static/logo.png" style="width: 150px;"/></h1>
       </div>
       <div class="column is-6">
         <div class="tabs">

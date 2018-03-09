@@ -3,10 +3,10 @@
     <h1 class="title">急上昇</h1>
     <div class="columns">
       <div class="profile-1 column is-5">
-        <img src="~/static/egg256.png"/>
-        <div>name: 名無し</div>
-        <div>タグ: </div>
-        <div>一言: コメントなし</div>
+        <img src="~/static/icon01.png"/>
+        <div>name: Tom</div>
+        <div>タグ: 漫談</div>
+        <div>一言: よろしく</div>
         <b-collapse :open="false">
           <button class="button is-primary" slot="trigger">read more</button>
             <div class="notification">
@@ -28,12 +28,12 @@
           <li>
             <div class="profile columns">
               <div class="column is-offset-3 is-3">
-                <img src="~/static/egg128.png"/>
+                <img src="~/static/icon02.png"/>
               </div>
               <div class="column is-offset-1 is-5">
-                <div>name: 名無し</div>
-                <div>タグ: </div>
-                <div>一言: コメントなし</div>
+                <div>name: Michael</div>
+                <div>タグ: 漫才</div>
+                <div>一言: なし</div>
                 <b-collapse :open="false">
                   <button class="button is-primary" slot="trigger">read more</button>
                   <div class="notification">
@@ -55,12 +55,12 @@
           <li>
             <div class="profile columns">
               <div class="column is-offset-3 is-3">
-                <img src="~/static/egg128.png"/>
+                <img src="~/static/icon03.png"/>
               </div>
               <div class="column is-offset-1 is-5">
-                <div>name: 名無し</div>
-                <div>タグ: </div>
-                <div>一言: コメントなし</div>
+                <div>name: Ken</div>
+                <div>タグ: ものまね</div>
+                <div>一言: 来てね</div>
                 <b-collapse :open="false">
                   <button class="button is-primary" slot="trigger">read more</button>
                   <div class="notification">
@@ -82,12 +82,12 @@
           <li>
             <div class="profile columns">
               <div class="column is-offset-3 is-3">
-                <img src="~/static/egg128.png"/>
+                <img src="~/static/icon04.jpg"/>
               </div>
               <div class="column is-offset-1 is-5">
-                <div>name: 名無し</div>
-                <div>タグ: </div>
-                <div>一言: コメントなし</div>
+                <div>name: Momo</div>
+                <div>タグ: 漫談</div>
+                <div>一言: よろしくね</div>
                 <b-collapse :open="false">
                   <button class="button is-primary" slot="trigger">read more</button>
                   <div class="notification">
