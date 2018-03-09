@@ -10,11 +10,21 @@
     </div>
     <div class="columns">
       <b-field class="column is-quarter is-offset-5 searching-button">
-        <button class="button is-rounded">現在位置から探す</button>
+        <button class="button is-rounded" @click="goToMap()">現在位置から探す</button>
       </b-field>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    goToMap() {
+      this.$store.dispatch("Search/goToMap");
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .wrapper {
