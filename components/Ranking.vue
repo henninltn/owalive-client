@@ -109,8 +109,20 @@
         </ul>
       </div>
     </div>
+    <div>{{name}}</div>
+    <div>{{email}}</div>
   </section>
 </template>
+
+<script>
+import axios from "axios";
+
+export default {
+  asyncData() {
+    return axios.post("http://api.nmkj.io:14080/profiles/1");
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .wrapper {

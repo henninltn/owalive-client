@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   mounted() {
     if (window.navigator.geolocation) {
@@ -22,7 +24,7 @@ export default {
 
           // マップオプションを変数に格納
           var mapOptions = {
-            zoom: 19, // 拡大倍率
+            zoom: 15, // 拡大倍率
             center: mapLatLng // 緯度・経度
           };
           // マップオブジェクト作成
@@ -30,6 +32,37 @@ export default {
             document.getElementById("maps"), // マップを表示する要素
             mapOptions // マップオプション
           );
+          axios
+            .get(
+              "http://api.nmkj.io:14080/place/" +
+                // mapLatLng.lat() +
+                "34.7" +
+                "/" +
+                // mapLatLng.lng() +
+                "135.4" +
+                "/10000"
+            )
+            .then(res => {
+              for (let event of res.data) {
+                console.log(event);
+                const marker = new google.maps.Marker({
+                  position: event.place,
+                  map: map,
+                  title: event.place.name
+                });
+                const infoWindow = new google.maps.InfoWindow({
+                  content:
+                    '<div><h1 class="title">' +
+                    event.title +
+                    '</h1><h2 class="subtitle">' +
+                    event.description +
+                    "</h2></div>"
+                });
+                marker.addListener("click", function() {
+                  infoWindow.open(map, marker);
+                });
+              }
+            });
         },
         // 取得失敗した場合
         function(error) {
